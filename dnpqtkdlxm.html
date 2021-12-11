@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skQMs.css">
+    <title>웹사이트</title>
+</head>
+<body>
+    <header>
+        <h1>
+            HTML
+        </h1>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <input type="text" class="textbox"
+            placeholder="Dropdown Menu" readonly>
+            <div class="option">
+                <div onclick="show('Html')"><ion-icon name="logo-html5"></ion-icon>Html</div>
+                <div onclick="show('CSS')"><ion-icon name="logo-css3"></ion-icon>CSS</div>
+                <div onclick="show('JavaScript')"><ion-icon name="logo-nodejs"></ion-icon>JavaScript</div>
+                <div onclick="show('Figma')"><ion-icon name="logo-figma"></ion-icon>Figma</div>
+                <div onclick="show('ReactJS')"><ion-icon name="logo-react"></ion-icon>ReactJS</div>
+                <div onclick="show('Python')"><ion-icon name="logo-python"></ion-icon>Python</div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            function show(anything){
+             document.querySelector('.textbox').value = anything;
+            }
+            let dropdown = document.querySelector('.dropdown')
+            dropdown.onclick=function(){
+                dropdown.classList.toggle('active')
+            }
+        </script>
+     
+    </nav>
+    <div style="display: flex;">
+        
+        <section class="good">
+           
+                <h2>Html</h2>
+                <article><iframe width="100%" height="250" src="https://www.youtube.com/embed/rgI930gqdaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </article>
+                <h2>CSS</h2>
+                <article><iframe width="100%" height="250" src="https://www.youtube.com/embed/gGebK7lWnCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
+                <h2>JavaScript</h2>
+                <article><iframe width="100%" height="250" src="https://www.youtube.com/embed/KF6t61yuPCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </article>
+                
+
+        </section>
+        <section class="good">
+            <h2>Figma</h2>
+                <article><iframe width="100%" height="250" src="https://www.youtube.com/embed/GsZk8s5JdWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
+                <h2>ReactJS</h2>
+                <article><iframe width="100%" height="250" src="https://www.youtube.com/embed/LclObYwGj90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
+                <h2>Python</h2>
+                <article><iframe width="100%" height="250" src="https://www.youtube.com/embed/kWiCuklohdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
+
+        </section>
+        
+        <aside id="windka">
+            <iframe src="https://www.kookmin.ac.kr/user/index.do" frameborder="0"></iframe>
+            <iframe src="https://www.snu.ac.kr/" frameborder="0"></iframe>
+            <iframe src="http://www.korea.ac.kr/mbshome/mbs/university/index.do" frameborder="0"></iframe>
+            <iframe src="https://www.yonsei.ac.kr/sc/" frameborder="0"></iframe>
+            
+        </aside>
+    </div>
+
+    <div style= "background-color: rgb(70, 70, 70);">
+        <footer>
+            <ul>판곡고등학교</ul>
+            <address>
+                <p>이주용</p>
+            </address>
+        </footer>
+    </div>
+    
+   
+</body>
+</html>

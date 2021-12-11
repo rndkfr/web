@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: left;
+    min-height: 70px;
+    background: #fafafa;
+    background-color: rgb(46, 46, 45);
+    height: 50px;
+    padding: 10px;
+}
+
+.dropdown{
+    position: relative;
+    margin-top: 0px;
+    width: 300px;
+    height: 50px;
+}
+.dropdown::before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.dropdown.active::before{
+    top: 22px;
+    transform: rotate(-225deg);
+}
+.dropdown>input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0,);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+.dropdown>.option{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+.dropdown.active .option{
+    display: block;
+
+}
+
+.dropdown>.option>div{
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.dropdown>.option>div:hover{
+background: #62baea;
+color: #fff;
+}
+.dropdown>.option>div>ion-icon{
+    position: relative;
+    top: 4px;
+    font-size: 1.2em;
+}
+
+
+
+
+h1{
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.good{
+    width: 35%;
+    height: 900px;
+    background: linear-gradient(to right,#fbc2eb,#a6c1ee );
+    display:inline-block;
+    align-content: flex-start;
+    justify-content: flex-start;
+    
+
+}
+
+
+
+
+#windka{
+    background-color: darkcyan;
+    width: 30%;
+    height: 900px;
+    display: inline-block;
+
+}
+
+aside>iframe{
+    position: relative;
+    top: 32px;
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    text-align: center;
+    display: block;
+}
+
+
